@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <!-- Main navigation container -->
+      <nav
+        class="relative flex w-full flex-nowrap items-center justify-between border-t-8 border-t-red-law bg-black-law py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        data-twe-navbar-ref
+      >
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+          <div class="ms-2">
+            <a
+              class="flex flex-col items-center justify-center text-xl text-black dark:text-white"
+              href="#"
+            >
+              <img
+                class="w-14"
+                src="./icons/law_icon.svg"
+                alt="balanza de la justicia"
+              />
+              <div class="flex flex-col items-center justify-center">
+                <div class="flex items-center">
+                  <hr class="h-[1px] w-6 border-t-0 bg-neutral-100" />
+                  <span class="mx-1 text-sm">Estudio juridico</span>
+                  <hr class="h-[1px] w-6 border-t-0 bg-neutral-100" />
+                </div>
+                <div class="">
+                  <span>Irigoyen</span><span class="mx-1">&</span
+                  ><span>Asociados</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- Hamburger button for mobile view -->
+          <button
+            class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden dark:text-neutral-200"
+            type="button"
+            data-twe-collapse-init
+            data-twe-target="#navbarSupportedContent2"
+            aria-controls="navbarSupportedContent2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- Hamburger icon -->
+            <img class="w-12" src="./icons/menu_icon.svg" alt="" />
+          </button>
+
+          <!-- Collapsible navbar container -->
+          <div
+            class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+            id="navbarSupportedContent2"
+            data-twe-collapse-item
+          >
+            <ul
+              class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
+              data-twe-navbar-nav-ref
+            >
+              <li
+                class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="text-black lg:px-2 dark:text-white"
+                  aria-current="page"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Servicios</a
+                >
+              </li>
+
+              <li
+                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Testimonios</a
+                >
+              </li>
+
+              <li
+                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Contacto</a
+                >
+              </li>
+              <li
+                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+                  href="#"
+                  data-twe-nav-link-ref
+                  >Nuestro Equipo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
