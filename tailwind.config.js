@@ -19,7 +19,7 @@ export default {
         },
       },
       animation: {
-        "slide-dropdown": "slide-dropdown 1s ease-in-out forwards",
+        "slide-dropdown": "slide-dropdown 2s ease-in-out forwards",
       },
     },
   },

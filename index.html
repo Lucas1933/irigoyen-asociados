@@ -31,7 +31,7 @@
                   <span class="mx-1 text-sm">Estudio juridico</span>
                   <hr class="h-[1px] w-6 border-t-0 bg-neutral-100" />
                 </div>
-                <div class="">
+                <div class="font-serif">
                   <span>Irigoyen</span><span class="mx-1">&</span
                   ><span>Asociados</span>
                 </div>
@@ -60,7 +60,7 @@
             data-twe-collapse-item
           >
             <ul
-              class="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row"
+              class="list-style-none me-auto flex flex-col ps-0 font-serif lg:mt-1 lg:flex-row"
               data-twe-navbar-nav-ref
             >
               <li
@@ -70,7 +70,7 @@
                 <a
                   class="text-black lg:px-2 dark:text-white"
                   aria-current="page"
-                  href="#"
+                  href="#servicios"
                   data-twe-nav-link-ref
                   >Servicios</a
                 >
@@ -125,7 +125,9 @@
           />
         </div>
         <div class="absolute top-0 flex h-full w-full flex-col justify-center">
-          <p class="px-2 text-center text-xl font-semibold text-white">
+          <p
+            class="px-2 text-center font-serif text-xl font-semibold text-white"
+          >
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem
             ut laborum veniam consectetur aperiam nesciunt veritatis reiciendis
             sequi? Nisi incidunt consequatur culpa, distinctio architecto
@@ -133,41 +135,101 @@
           </p>
         </div>
       </div>
-      <h1 class="text-center text-3xl font-extrabold text-white">Servicios</h1>
-    </main>
-    <div class="my-10 flex flex-col items-center justify-center px-4">
-      <div
-        class="flex h-fit w-[45vh] flex-col rounded-md border-4 border-solid border-red-law py-5 shadow-[0px_10px_5px_0px_rgba(141,15,33,1)]"
-        id="dropdownContainer"
-      >
-        <div class="flex items-center justify-evenly">
-          <div class="w-[30%]"><img src="./icons/accident.svg" alt="" /></div>
-          <p class="text-xl font-bold text-white">
-            • ACCIDENTES DE TRABAJO (ART)
-          </p>
-          <div class="w-[25%] px-4">
-            <img src="./icons/plus_icon.svg" alt="" />
+
+      <section class="my-6" id="servicios">
+        <!--     <h1
+          class="text-center font-serif text-3xl font-extrabold text-white underline"
+        >
+          Servicios
+        </h1> -->
+        <div class="my-10 flex flex-col items-center justify-center px-4">
+          <div
+            class="flex h-fit w-[45vh] flex-col rounded-md border-4 border-solid border-red-law py-5 shadow-[0px_10px_5px_0px_rgba(141,15,33,1)]"
+            id="collapseContainer"
+          >
+            <div class="flex items-center justify-evenly">
+              <div class="w-[30%]">
+                <img
+                  src="./icons/accident.svg"
+                  alt="silueta con un vendaje en el brazo"
+                />
+              </div>
+              <p class="font-serif text-xl font-bold text-white">
+                • ACCIDENTES DE TRABAJO (ART)
+              </p>
+              <div class="w-[25%] px-4">
+                <img
+                  id="infoIcon"
+                  src="./icons/plus_icon.svg"
+                  alt="icono de suma para mostrar mas informacion"
+                />
+                <span class="font-sans text-white">Info</span>
+              </div>
+            </div>
+
+            <div
+              class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
+              id="collapseContentContainer"
+            >
+              <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
+              <p class="font-sans text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur ea vero natus provident adipisci cum temporibus!
+                Tempora dolor reprehenderit optio eius beatae ipsam assumenda
+                alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Quae exercitationem impedit
+                maiores aliquid aspernatur nesciunt vitae, reiciendis amet
+                pariatur, quasi cum obcaecati facilis voluptatum! Necessitatibus
+                impedit vel facere. Aliquam, voluptas!
+              </p>
+            </div>
           </div>
         </div>
+        <div class="my-10 flex flex-col items-center justify-center px-4">
+          <div
+            class="flex h-fit w-[45vh] flex-col rounded-md border-4 border-solid border-red-law py-5 shadow-[0px_10px_5px_0px_rgba(141,15,33,1)]"
+            id="collapseContainer"
+          >
+            <div class="flex items-center justify-evenly">
+              <div class="w-[30%]">
+                <img
+                  src="./icons/accident.svg"
+                  alt="silueta con un vendaje en el brazo"
+                />
+              </div>
+              <p class="font-serif text-xl font-bold text-white">
+                • ACCIDENTES DE TRABAJO (ART)
+              </p>
+              <div class="w-[25%] px-4">
+                <img
+                  id="infoIcon"
+                  src="./icons/plus_icon.svg"
+                  alt="icono de suma para mostrar mas informacion"
+                />
+                <span class="font-sans text-white">Info</span>
+              </div>
+            </div>
 
-        <div
-          class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
-          id="dropdownContentContainer"
-        >
-          <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
-          <p class="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-            ea vero natus provident adipisci cum temporibus! Tempora dolor
-            reprehenderit optio eius beatae ipsam assumenda alias! Hic
-            recusandae aliquam autem eum! Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quae exercitationem impedit maiores
-            aliquid aspernatur nesciunt vitae, reiciendis amet pariatur, quasi
-            cum obcaecati facilis voluptatum! Necessitatibus impedit vel facere.
-            Aliquam, voluptas!
-          </p>
+            <div
+              class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
+              id="collapseContentContainer"
+            >
+              <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
+              <p class="font-sans text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur ea vero natus provident adipisci cum temporibus!
+                Tempora dolor reprehenderit optio eius beatae ipsam assumenda
+                alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Quae exercitationem impedit
+                maiores aliquid aspernatur nesciunt vitae, reiciendis amet
+                pariatur, quasi cum obcaecati facilis voluptatum! Necessitatibus
+                impedit vel facere. Aliquam, voluptas!
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
@@ -188,6 +250,6 @@
       eaque impedit quibusdam at.
     </p>
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/js/dropdown.js"></script>
+    <script type="module" src="/js/collapse.js"></script>
   </body>
 </html>
