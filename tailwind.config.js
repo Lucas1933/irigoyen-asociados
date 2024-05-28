@@ -13,13 +13,13 @@ export default {
         "black-law": "#1a1d22",
       },
       keyframes: {
-        "slide-dropdown": {
+        "slide-collapse": {
           "0%": { opacity: 0, transform: "translateY(0)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
       },
       animation: {
-        "slide-dropdown": "slide-dropdown 2s ease-in-out forwards",
+        "slide-collapse": "slide-collapse 2s ease-in-out forwards",
       },
     },
   },
