@@ -5,7 +5,6 @@ let hiddenContentContainers = [];
 async function toggleCollapse(event) {
   let hiddenContentContainer = event.currentTarget.children[1];
   let infoIcon = event.currentTarget.children[0].querySelectorAll("img")[1];
-  console.log(infoIcon);
   if (hiddenContentContainer.style.maxHeight == "0px") {
     infoIcon.src = "./icons/minus_icon.svg";
     hiddenContentContainer.classList.add("animate-slide-collapse");
