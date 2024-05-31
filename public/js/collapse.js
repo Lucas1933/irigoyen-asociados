@@ -4,10 +4,10 @@ let hiddenContentContainers = [];
 
 async function toggleCollapse(event) {
   let hiddenContentContainer = event.currentTarget.children[1];
-  let infoIcon = event.currentTarget.children[0].querySelectorAll("img")[1];
-  console.log(infoIcon);
+  let infoIcon = event.currentTarget.children[0].querySelectorAll("img")[0];
+
   if (hiddenContentContainer.style.maxHeight == "0px") {
-    infoIcon.src = "./icons/minus_icon.svg";
+    infoIcon.src = "./icons/arrow-icon-up.svg";
     hiddenContentContainer.classList.add("animate-slide-collapse");
     hiddenContentContainer.style.maxHeight = "500px";
     for (let i = 0; i < hiddenContentContainers.length; i++) {
@@ -15,11 +15,11 @@ async function toggleCollapse(event) {
         hiddenContentContainers[i].style.maxHeight = "0px";
         hiddenContentContainers[i].parentNode.children[0].querySelectorAll(
           "img",
-        )[1].src = "./icons/plus_icon.svg";
+        )[0].src = "./icons/arrow-icon.svg";
       }
     }
   } else {
-    infoIcon.src = "./icons/plus_icon.svg";
+    infoIcon.src = "./icons/arrow-icon.svg";
     hiddenContentContainer.style.maxHeight = "0px";
     hiddenContentContainer.classList.remove("animate-slide-collapse");
   }
