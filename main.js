@@ -1,6 +1,6 @@
-import { Collapse, initTWE, Ripple, Input } from "tw-elements";
+import { Collapse, initTWE, Ripple, Input, Carousel } from "tw-elements";
 
-initTWE({ Collapse, Ripple, Input });
+initTWE({ Collapse, Ripple, Input, Carousel });
 
 /* import './style.css'
 import javascriptLogo from './javascript.svg'
