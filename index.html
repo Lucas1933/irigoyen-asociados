@@ -8,7 +8,7 @@
     <title>Irigoyen & Asociados</title>
   </head>
   <!--   class="bg-[linear-gradient(128deg,_rgba(38,36,36,1)_50%,_rgba(255,255,255,1)_100%)]" -->
-  <body class="bg-opacity-10 bg-[url('/bg.svg')]">
+  <body class="">
     <header class="sticky top-0 z-10">
       <!-- Main navigation container -->
       <nav
@@ -116,29 +116,29 @@
         </div>
       </nav>
     </header>
-    
-    <main>
-      <div class="relative">
-        <div class="h-[80vh] bg-red-law">
-          <img
-            class="h-full w-full opacity-65"
-            src="./images/handshake.jpg"
-            alt="Estrechon de manos"
-          />
-        </div>
-        <div class="absolute top-0 flex h-full w-full flex-col justify-center">
-          <p
-            class="px-2 text-center font-serif text-xl font-semibold text-white"
-          >
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem
-            ut laborum veniam consectetur aperiam nesciunt veritatis reiciendis
-            sequi? Nisi incidunt consequatur culpa, distinctio architecto
-            impedit sit mollitia. Ipsam, ipsum!"
-          </p>
-        </div>
-      </div>
 
-      <div class="mt-10 flex items-center justify-center">
+    <div class="fixed left-0 top-0 z-[-1] h-full">
+      <img
+        class="h-full w-full"
+        src="./images/handshake.jpg"
+        alt="Estrechon de manos"
+      />
+    </div>
+    <div class="pt-[100vh]">
+      <div
+        class="flex h-[80vh] w-full flex-col justify-center bg-red-law bg-opacity-60"
+      >
+        <p class="px-2 text-center font-serif text-xl font-semibold text-white">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem
+          ut laborum veniam consectetur aperiam nesciunt veritatis reiciendis
+          sequi? Nisi incidunt consequatur culpa, distinctio architecto impedit
+          sit mollitia. Ipsam, ipsum!"
+        </p>
+      </div>
+    </div>
+
+    <main class="bg-opacity-10 bg-[url('/bg.svg')]">
+      <div class="flex items-center justify-center">
         <hr class="h-[6px] w-full border-t-0 bg-red-law" />
         <h1
           id="serviciosSection"
