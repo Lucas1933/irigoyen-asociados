@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js}",
+    "./public/js/*.js",
     "./node_modules/tw-elements/js/**/*.js",
   ],
   plugins: [require("tw-elements/plugin.cjs")],
@@ -12,15 +12,8 @@ export default {
         "red-law": "#8d0f21",
         "black-law": "#1a1d22",
       },
-      keyframes: {
-        "slide-collapse": {
-          "0%": { opacity: 0, transform: "translateY(0)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
-        },
-      },
-      animation: {
-        "slide-collapse": "slide-collapse 2s ease-in-out forwards",
-      },
+      keyframes: {},
+      animation: {},
     },
   },
 };

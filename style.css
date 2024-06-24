@@ -18,6 +18,14 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(236, 47, 47, 0.3);
 }
+.bg-lg {
+  background: rgba(84, 84, 84, 0);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(236, 47, 47, 0.3);
+}
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

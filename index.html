@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/icons/law_icon.svg" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Irigoyen & Asociados</title>
   </head>
+
   <!--   class="bg-[linear-gradient(128deg,_rgba(38,36,36,1)_50%,_rgba(255,255,255,1)_100%)]" -->
   <body class="">
     <header class="sticky top-0 z-10">
@@ -70,13 +72,26 @@
               >
                 <a
                   class="text-black lg:px-2 dark:text-white"
-                  aria-current="page"
+                  data-twe-collapse-init
+                  data-twe-target="#navbarSupportedContent2"
+                  href="#home"
+                  data-twe-nav-link-ref
+                  >Inicio</a
+                >
+              </li>
+              <li
+                class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+                data-twe-nav-item-ref
+              >
+                <a
+                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#serviciosSection"
+                  data-twe-collapse-init
+                  data-twe-target="#navbarSupportedContent2"
                   data-twe-nav-link-ref
                   >Servicios</a
                 >
               </li>
-
               <li
                 class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
@@ -84,11 +99,12 @@
                 <a
                   class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#testimoniosSection"
+                  data-twe-collapse-init
+                  data-twe-target="#navbarSupportedContent2"
                   data-twe-nav-link-ref
                   >Testimonios</a
                 >
               </li>
-
               <li
                 class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
@@ -96,19 +112,10 @@
                 <a
                   class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
                   href="#contactoSection"
+                  data-twe-collapse-init
+                  data-twe-target="#navbarSupportedContent2"
                   data-twe-nav-link-ref
                   >Contacto</a
-                >
-              </li>
-              <li
-                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-                data-twe-nav-item-ref
-              >
-                <a
-                  class="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none lg:px-2 dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                  href="#"
-                  data-twe-nav-link-ref
-                  >Nuestro Equipo</a
                 >
               </li>
             </ul>
@@ -116,20 +123,33 @@
         </div>
       </nav>
     </header>
-
-    <div class="fixed top-0 z-[-1] h-[100vh]">
+    <div id="home"></div>
+    <div class="fixed top-0 z-[-1] h-[100vh] lg:hidden">
       <img
         class="h-full w-full"
         src="./images/handshake.jpg"
         alt="Estrechon de manos"
       />
     </div>
-    <div class="pt-[70vh]">
+
+    <div class="hidden lg:fixed lg:top-0 lg:z-[-1] lg:block lg:w-full">
+      <img
+        class="h-full w-full lg:opacity-90"
+        src="./images/desktop-bg.webp"
+        alt="Estrechon de manos"
+      />
+    </div>
+    <div class="pt-[70vh] lg:pt-40">
       <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="800"
         class="mb-24 flex flex-col items-center justify-center text-xl text-black dark:text-white"
       >
         <img
-          class="w-40"
+          class="w-40 lg:w-80"
           src="./icons/law_icon.svg"
           alt="balanza de la justicia"
         />
@@ -137,20 +157,22 @@
           class="flex flex-col items-center justify-center font-extrabold text-black"
         >
           <div class="flex items-center">
-            <hr class="h-[1px] w-6 border-t-0 bg-black" />
-            <span class="mx-1 text-xl">Estudio juridico</span>
-            <hr class="h-[1px] w-6 border-t-0 bg-black" />
+            <hr class="h-[1px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
+            <span class="mx-1 text-xl lg:text-3xl">Estudio juridico</span>
+            <hr class="h-[1px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
           </div>
-          <div class="font-serif text-2xl">
+          <div class="font-serif text-2xl lg:text-5xl">
             <span>Irigoyen</span><span class="mx-1">&</span
             ><span>Asociados</span>
           </div>
         </div>
       </div>
       <div
-        class="bg-glass flex h-[80vh] w-full flex-col justify-center bg-red-law bg-opacity-60"
+        class="bg-glass flex h-[80vh] w-full flex-col justify-center bg-red-law bg-opacity-60 lg:mt-60"
       >
-        <p class="px-2 text-center font-serif text-xl font-semibold text-white">
+        <p
+          class="px-2 text-center font-serif text-xl font-semibold text-white lg:px-20 lg:text-3xl"
+        >
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem
           ut laborum veniam consectetur aperiam nesciunt veritatis reiciendis
           sequi? Nisi incidunt consequatur culpa, distinctio architecto impedit
@@ -158,9 +180,8 @@
         </p>
       </div>
     </div>
-
-    <main class="bg-[url('/bg.svg')]">
-      <div class="bg-glass-main">
+    <main class="bg-[url('/bg.svg')] lg:mx-44">
+      <div class="bg-black bg-opacity-20">
         <div class="flex items-center justify-center">
           <hr class="h-[6px] w-full border-t-0 bg-red-law" />
           <h1
@@ -172,18 +193,22 @@
           <hr class="h-[6px] w-full border-t-0 bg-red-law" />
         </div>
 
-        <section class="my-6" id="servicios">
+        <section class="my-6 lg:flex lg:flex-col" id="servicios">
           <div class="my-10 flex flex-col items-center justify-center px-4">
-            <div
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black py-5"
+            <button
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
             >
-              <div class="flex w-[100%] flex-col items-center">
+              <div
+                class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
+              >
                 <p class="text-center font-serif text-xl font-bold text-white">
                   ACCIDENTES DE TRABAJO <br />
                   (ART)
                 </p>
-                <div class="w-[10%]">
-                  <img src="./icons/arrow-icon.svg" alt="" />
+                <div
+                  class="arrow w-[10%] transition ease-in-out lg:mx-2 lg:w-[5%]"
+                >
+                  <img class="" src="./icons/arrow-icon.svg" alt="" />
                 </div>
               </div>
 
@@ -191,7 +216,7 @@
                 class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
               >
                 <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
-                <p class="font-sans text-white">
+                <p class="text-justify font-sans text-white">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consectetur ea vero natus provident adipisci cum temporibus!
                   Tempora dolor reprehenderit optio eius beatae ipsam assumenda
@@ -202,9 +227,77 @@
                   Necessitatibus impedit vel facere. Aliquam, voluptas!
                 </p>
               </div>
-            </div>
+            </button>
           </div>
           <div class="my-10 flex flex-col items-center justify-center px-4">
+            <button
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
+            >
+              <div
+                class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
+              >
+                <p class="text-center font-serif text-xl font-bold text-white">
+                  DESPIDOS
+                </p>
+                <div
+                  class="arrow w-[10%] transition ease-in-out lg:mx-2 lg:w-[5%]"
+                >
+                  <img class="" src="./icons/arrow-icon.svg" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
+              >
+                <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
+                <p class="text-justify font-sans text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur ea vero natus provident adipisci cum temporibus!
+                  Tempora dolor reprehenderit optio eius beatae ipsam assumenda
+                  alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor,
+                  sit amet consectetur adipisicing elit. Quae exercitationem
+                  impedit maiores aliquid aspernatur nesciunt vitae, reiciendis
+                  amet pariatur, quasi cum obcaecati facilis voluptatum!
+                  Necessitatibus impedit vel facere. Aliquam, voluptas!
+                </p>
+              </div>
+            </button>
+          </div>
+          <div class="my-10 flex flex-col items-center justify-center px-4">
+            <button
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
+            >
+              <div
+                class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
+              >
+                <p class="text-center font-serif text-xl font-bold text-white">
+                  ACCIDENTES DE TRANSITO
+                </p>
+                <div
+                  class="arrow w-[10%] transition ease-in-out lg:mx-2 lg:w-[5%]"
+                >
+                  <img class="" src="./icons/arrow-icon.svg" alt="" />
+                </div>
+              </div>
+
+              <div
+                class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
+              >
+                <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
+                <p class="text-justify font-sans text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur ea vero natus provident adipisci cum temporibus!
+                  Tempora dolor reprehenderit optio eius beatae ipsam assumenda
+                  alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor,
+                  sit amet consectetur adipisicing elit. Quae exercitationem
+                  impedit maiores aliquid aspernatur nesciunt vitae, reiciendis
+                  amet pariatur, quasi cum obcaecati facilis voluptatum!
+                  Necessitatibus impedit vel facere. Aliquam, voluptas!
+                </p>
+              </div>
+            </button>
+          </div>
+          <!--   <div class="my-10 flex flex-col items-center justify-center px-4">
             <div
               class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black py-5"
             >
@@ -214,7 +307,7 @@
                 >
                   ACCIDENTES DE TRANSITO
                 </p>
-                <div class="w-[10%]">
+                <div class="arrow w-[10%]">
                   <img src="./icons/arrow-icon.svg" alt="" />
                 </div>
               </div>
@@ -248,7 +341,7 @@
                 <p class="text-center font-serif text-xl font-bold text-white">
                   DESPIDOS
                 </p>
-                <div class="w-[10%]">
+                <div class="arrow w-[10%]">
                   <img src="./icons/arrow-icon.svg" alt="" />
                 </div>
               </div>
@@ -269,7 +362,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
         <div class="my-10 flex items-center justify-center">
@@ -491,6 +584,5 @@
       <img src="/icons/wsp.svg" alt="" />
     </div>
     <script type="module" src="/main.js"></script>
-    <script type="module" src="/js/collapse.js"></script>
   </body>
 </html>
