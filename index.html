@@ -11,10 +11,10 @@
 
   <!--   class="bg-[linear-gradient(128deg,_rgba(38,36,36,1)_50%,_rgba(255,255,255,1)_100%)]" -->
   <body class="">
-    <header class="sticky top-0 z-10">
+    <header class="sticky top-0 z-10 transition-all duration-300">
       <!-- Main navigation container -->
       <nav
-        class="relative flex w-full flex-nowrap items-center justify-between border-t-8 border-t-red-law bg-black py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
+        class="relative flex w-full flex-nowrap items-center justify-between border-t-8 border-t-red-law bg-black py-2 text-neutral-500 shadow-dark-mild hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start lg:py-0"
         data-twe-navbar-ref
       >
         <div class="flex w-full flex-wrap items-center justify-between px-3">
@@ -67,7 +67,7 @@
               data-twe-navbar-nav-ref
             >
               <li
-                class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+                class="my-4 ps-2 lg:my-0 lg:rounded lg:pe-1 lg:ps-2 lg:transition-all lg:duration-300 lg:hover:bg-red-law"
                 data-twe-nav-item-ref
               >
                 <a
@@ -80,7 +80,7 @@
                 >
               </li>
               <li
-                class="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2"
+                class="my-4 ps-2 lg:my-0 lg:rounded lg:pe-1 lg:ps-2 lg:transition-all lg:duration-300 lg:hover:bg-red-law"
                 data-twe-nav-item-ref
               >
                 <a
@@ -93,7 +93,7 @@
                 >
               </li>
               <li
-                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                class="mb-4 ps-2 lg:mb-0 lg:rounded lg:pe-1 lg:ps-0 lg:transition-all lg:duration-300 lg:hover:bg-red-law"
                 data-twe-nav-item-ref
               >
                 <a
@@ -106,7 +106,7 @@
                 >
               </li>
               <li
-                class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
+                class="mb-4 ps-2 lg:mb-0 lg:rounded lg:pe-1 lg:ps-0 lg:transition-all lg:duration-300 lg:hover:bg-red-law"
                 data-twe-nav-item-ref
               >
                 <a
@@ -132,7 +132,10 @@
       />
     </div>
 
-    <div class="hidden lg:fixed lg:top-0 lg:z-[-1] lg:block lg:w-full">
+    <div
+      id="handshake"
+      class="hidden transition-all duration-300 lg:fixed lg:top-0 lg:z-[-1] lg:block lg:w-full"
+    >
       <img
         class="h-full w-full lg:opacity-90"
         src="./images/desktop-bg.webp"
@@ -149,7 +152,7 @@
         class="mb-24 flex flex-col items-center justify-center text-xl text-black dark:text-white"
       >
         <img
-          class="w-40 lg:w-80"
+          class="w-52 lg:w-80"
           src="./icons/law_icon.svg"
           alt="balanza de la justicia"
         />
@@ -157,18 +160,18 @@
           class="flex flex-col items-center justify-center font-extrabold text-black"
         >
           <div class="flex items-center">
-            <hr class="h-[1px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
-            <span class="mx-1 text-xl lg:text-3xl">Estudio juridico</span>
-            <hr class="h-[1px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
+            <hr class="h-[3px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
+            <span class="mx-1 text-2xl lg:text-3xl">Estudio juridico</span>
+            <hr class="h-[3px] w-6 border-t-0 bg-black lg:h-[5px] lg:w-16" />
           </div>
-          <div class="font-serif text-2xl lg:text-5xl">
+          <div class="font-serif text-3xl lg:text-5xl">
             <span>Irigoyen</span><span class="mx-1">&</span
             ><span>Asociados</span>
           </div>
         </div>
       </div>
       <div
-        class="bg-glass flex h-[80vh] w-full flex-col justify-center bg-red-law bg-opacity-60 lg:mt-60"
+        class="flex h-[80vh] w-full flex-col justify-center bg-red-law bg-opacity-60 backdrop-blur-[10px] lg:mt-60"
       >
         <p
           class="px-2 text-center font-serif text-xl font-semibold text-white lg:px-20 lg:text-3xl"
@@ -196,7 +199,7 @@
         <section class="my-6 lg:flex lg:flex-col" id="servicios">
           <div class="my-10 flex flex-col items-center justify-center px-4">
             <button
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-all duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
             >
               <div
                 class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
@@ -231,7 +234,7 @@
           </div>
           <div class="my-10 flex flex-col items-center justify-center px-4">
             <button
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-all duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
             >
               <div
                 class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
@@ -265,7 +268,7 @@
           </div>
           <div class="my-10 flex flex-col items-center justify-center px-4">
             <button
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-opacity duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
+              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black bg-opacity-70 py-5 transition-all duration-300 hover:bg-red-law hover:bg-opacity-20 lg:w-[100vh] lg:flex-col lg:bg-opacity-30 lg:px-5 lg:py-5"
             >
               <div
                 class="flex w-[100%] flex-col items-center lg:flex-row lg:justify-between"
@@ -297,72 +300,6 @@
               </div>
             </button>
           </div>
-          <!--   <div class="my-10 flex flex-col items-center justify-center px-4">
-            <div
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black py-5"
-            >
-              <div class="flex w-[100%] flex-col items-center">
-                <p
-                  class="text-center font-serif text-xl font-extrabold text-white"
-                >
-                  ACCIDENTES DE TRANSITO
-                </p>
-                <div class="arrow w-[10%]">
-                  <img src="./icons/arrow-icon.svg" alt="" />
-                </div>
-              </div>
-
-              <div
-                class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
-              >
-                <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
-                <p class="font-sans text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur ea vero natus provident adipisci cum temporibus!
-                  Tempora dolor reprehenderit optio eius beatae ipsam assumenda
-                  alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor,
-                  sit amet consectetur adipisicing elit. Quae exercitationem
-                  impedit maiores aliquid aspernatur nesciunt vitae, reiciendis
-                  amet pariatur, quasi cum obcaecati facilis voluptatum!
-                  Necessitatibus impedit vel facere. Aliquam, voluptas! Lorem
-                  ipsum dolor sit amet consectetur adipisicing elit. Autem sint
-                  reiciendis cupiditate dolore doloremque delectus! Nobis,
-                  maiores! Autem fugiat repudiandae ipsam, dignissimos, officiis
-                  minima nesciunt, laborum possimus odio quisquam quidem!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="my-10 flex flex-col items-center justify-center px-4">
-            <div
-              class="flex h-fit w-[45vh] flex-col rounded border-b-2 border-red-law border-opacity-70 bg-black py-5"
-            >
-              <div class="flex w-[100%] flex-col items-center">
-                <p class="text-center font-serif text-xl font-bold text-white">
-                  DESPIDOS
-                </p>
-                <div class="arrow w-[10%]">
-                  <img src="./icons/arrow-icon.svg" alt="" />
-                </div>
-              </div>
-
-              <div
-                class="overflow-hidden px-3 transition-[max-height] duration-500 ease-linear"
-              >
-                <hr class="my-2 h-[1px] w-full border-t-0 bg-white" />
-                <p class="font-sans text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur ea vero natus provident adipisci cum temporibus!
-                  Tempora dolor reprehenderit optio eius beatae ipsam assumenda
-                  alias! Hic recusandae aliquam autem eum! Lorem ipsum dolor,
-                  sit amet consectetur adipisicing elit. Quae exercitationem
-                  impedit maiores aliquid aspernatur nesciunt vitae, reiciendis
-                  amet pariatur, quasi cum obcaecati facilis voluptatum!
-                  Necessitatibus impedit vel facere. Aliquam, voluptas!
-                </p>
-              </div>
-            </div>
-          </div> -->
         </section>
 
         <div class="my-10 flex items-center justify-center">
@@ -583,6 +520,31 @@
     <div class="fixed bottom-5 right-5 z-10 w-[8vh]">
       <img src="/icons/wsp.svg" alt="" />
     </div>
+    <footer class="bg-black">
+      <div class="ms-2">
+        <a
+          class="flex flex-col items-center justify-center text-xl text-black dark:text-white"
+          href="#"
+        >
+          <img
+            class="w-14"
+            src="./icons/law_icon.svg"
+            alt="balanza de la justicia"
+          />
+          <div class="flex flex-col items-center justify-center">
+            <div class="flex items-center">
+              <hr class="h-[1px] w-6 border-t-0 bg-neutral-100" />
+              <span class="mx-1 text-sm">Estudio juridico</span>
+              <hr class="h-[1px] w-6 border-t-0 bg-neutral-100" />
+            </div>
+            <div class="font-serif">
+              <span>Irigoyen</span><span class="mx-1">&</span
+              ><span>Asociados</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
