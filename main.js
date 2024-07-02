@@ -4,6 +4,7 @@ import bgBlur from "./public/js/bg-blur";
 import smoothScroll from "./public/js/smooth-scroll";
 import collapse from "./public/js/collapse";
 import headerRezise from "./public/js/header-rezise";
+import bgBlurMobile from "./public/js/bg-blur-mobile";
 
 document.addEventListener("DOMContentLoaded", () => {
   initTWE({ Collapse, Ripple, Input, Carousel });
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
   smoothScroll();
   collapse();
   headerRezise();
+  bgBlurMobile();
 });
